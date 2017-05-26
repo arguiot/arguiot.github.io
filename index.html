@@ -74,14 +74,16 @@ description: Developper.
 
   <section id="blog">
     <div class="wrapper">
-    <h2>Get Started</h2>
-    <p>To use noobscroll.js, you'll need to download noobscroll.js and add it in your js folder. And after, add these line of code in the head or in the body of your page:</p>
-    <script src="https://gist.github.com/arguiot/e8751af8d5a7f36ab5f0794d17bd4a76.js")></script>
-    <h2>Demo</h2>
-    <p>Now, you can use Noob Scroll on your website like this, but we recommend you to read the docs</p>
-      <script src="https://gist.github.com/arguiot/da5e4ca338745115b583f07a511ad1b2.js")></script>
-    </div>
-
+    <h2>Posts</h2>
+    {% for post in site.posts %}
+      <a href="{{post.url}}">
+        <div class="post">
+          <div class="img" style="background-image: url('{{post.img}}')"></div>
+          <div class="title">{{post.title}}</div>
+          <div class="desc">{{post.excerpt}}</div>
+        </div>
+      </a>
+    {% endfor %}
   </section>
 
   <!-- Docs call to action -->

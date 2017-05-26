@@ -281,6 +281,30 @@ h1:not(.title) {
   }
 }
 
+
+.post {
+  width: 100%;
+  height: 230px;
+  // border: 1px grey solid;
+  padding: 10px 10%;
+  .img {
+    width: 100%;
+    height: 150px;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .desc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 100px;
+  }
+}
+
+
 @media (max-width: 480px) {
   header .header-content {
     img {
