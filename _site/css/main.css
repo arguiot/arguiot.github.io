@@ -1,5 +1,5 @@
 body {
-  margin-bottom: 300px;
+  margin-bottom: 500px;
   background-color: #276DC4; }
 
 html, body {
@@ -155,24 +155,34 @@ section {
       font-size: 24px;
       padding: 15px 35px;
       text-decoration: none; }
-  section#docs-cta {
+  section#tweet {
     background-color: #ffffff;
-    padding: 75px;
+    padding-bottom: 75px;
     text-align: center; }
-    section#docs-cta a.btn {
+    section#tweet a.btn {
       background-color: #276DC4;
       color: #ffffff;
       border-radius: 2pt;
       font-size: 24px;
       padding: 15px 35px;
       text-decoration: none; }
-  section#getting-started {
-    padding: 100px 0; }
-  section#grid-example {
+  section#mail {
     background-color: #276DC4;
-    padding: 100px 0; }
+    padding: 75px 0;
+    text-align: center;
+    color: white; }
+    section#mail a.btn {
+      background-color: #ffffff;
+      color: #276DC4;
+      border-radius: 2pt;
+      font-size: 24px;
+      padding: 15px 35px;
+      text-decoration: none; }
   section#blog {
     padding: 75px 0; }
+
+.twitter-timeline {
+  overflow: hidden; }
 
 .box {
   height: 25px;

@@ -74,24 +74,15 @@ description: Developper.
 
   <section id="blog">
     <div class="wrapper">
-    <h2>Posts</h2>
-    {% for post in site.drafts.posts %}
-      <a href="{{post.url}}">
-        <div class="post">
-          <div class="img" style="background-image: url('{{post.img}}')"></div>
-          <div class="title">{{post.title}}</div>
-          <div class="desc">{{ post.excerpt }}</div>
-        </div>
-      </a>
-    {% endfor %}
+    <h2>Tweets:</h2>
+    <a class="twitter-timeline" data-height="750" data-theme="light" href="https://twitter.com/arthur_guiot">Tweets by arthur_guiot</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </section>
 
   <!-- Docs call to action -->
 
-  <section id="docs-cta">
-    <a href="{{site.docs}}" class="btn">Read the docs</a>
+  <section id="tweet">
+    <a href="{{site.tweet}}" class="btn">Tweet me!</a>
   </section>
-
 </main>
 
 <!-- Bottom "All code hosted with ❤ by GitHub section that pops up -->

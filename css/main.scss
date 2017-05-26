@@ -4,7 +4,7 @@
 $brand-color: #276DC4;
 
 body {
-  margin-bottom: 300px;
+  margin-bottom: 500px;
   // margin-top: 100vh;
   background-color: $brand-color;
 }
@@ -191,9 +191,9 @@ section {
       text-decoration: none;
     }
   }
-  &#docs-cta {
+  &#tweet {
     background-color: #ffffff;
-    padding: 75px;
+    padding-bottom: 75px;
     text-align: center;
     a.btn {
       background-color: $brand-color;
@@ -204,19 +204,28 @@ section {
       text-decoration: none;
     }
   }
-  &#getting-started {
-    padding: 100px 0;
-  }
-  &#grid-example {
+  &#mail {
     background-color: $brand-color;
-    padding: 100px 0;
+    padding: 75px 0;
+    text-align: center;
+    color: white;
+    a.btn {
+      background-color: #ffffff;
+      color: $brand-color;
+      border-radius: 2pt;
+      font-size: 24px;
+      padding: 15px 35px;
+      text-decoration: none;
+    }
   }
   &#blog {
     padding: 75px 0;
   }
 }
 
-
+.twitter-timeline {
+  overflow: hidden;
+}
 .box {
   height: 25px;
   background-color: #ffffff;
