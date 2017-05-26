@@ -75,12 +75,12 @@ description: Developper.
   <section id="blog">
     <div class="wrapper">
     <h2>Posts</h2>
-    {% for post in site.posts %}
+    {% for post in site.drafts.posts %}
       <a href="{{post.url}}">
         <div class="post">
           <div class="img" style="background-image: url('{{post.img}}')"></div>
           <div class="title">{{post.title}}</div>
-          <div class="desc">{{ post.content | split:'<!--break-->' | second }}</div>
+          <div class="desc">{{ post.content | split:'<!--break-->' | first }}</div>
         </div>
       </a>
     {% endfor %}
