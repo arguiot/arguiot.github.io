@@ -11,18 +11,18 @@ permalink:  pretty
 
 # Custom variables
 version:    v1.0.3
-cdn:        https://unpkg.com/noobscroll
 noobscroll:
   repo:       https://github.com/arguiot/NoobScroll
   download:   https://github.com/arguiot/NoobScroll/releases/download/v1.0.2/noobscroll.min.js
   docs:       https://github.com/arguiot/NoobScroll/wiki
   stargazers: https://github.com/arguiot/NoobScroll/stargazers
+  cdn:        https://unpkg.com/noobscroll
 
-npm:        https://www.npmjs.com/package/noobscroll
 author:
   github:   https://github.com/arguiot
   twitter:  https://twitter.com/arthur_guiot
   mail: mailto:arguiot@gmail.com
+  facebook: https://www.facebook.com/profile.php?id=100012180104056
 inspiration:
   github:   https://github.com/lucasgruwez
 

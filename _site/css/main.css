@@ -230,6 +230,9 @@ footer {
     padding: 0; }
     footer ul li {
       display: inline-block; }
+      footer ul li a {
+        font-size: 40px;
+        color: white; }
       footer ul li img {
         width: 45px; }
       footer ul li:not(:first-child) {
