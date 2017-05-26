@@ -8,7 +8,10 @@ body {
   // margin-top: 100vh;
   background-color: $brand-color;
 }
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
