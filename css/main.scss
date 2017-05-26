@@ -327,7 +327,10 @@ h1:not(.title) {
     max-height: 100px;
   }
 }
-
+.trex {
+  position: relative;
+  top: 50px;
+}
 
 @media (max-width: 480px) {
   header .header-content {
