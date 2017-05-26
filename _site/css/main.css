@@ -28,14 +28,18 @@ a {
 
 nav {
   height: 75px;
-  background-color: #ffffff;
   padding: 17.5px 25px;
   color: #276DC4;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100; }
+  nav .menu {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
   nav img {
     height: 40px; }
   nav span {
@@ -48,13 +52,7 @@ nav {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
   nav ul {
-    position: absolute;
-    right: 25px;
-    top: 50%;
-    color: #000000;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    color: #fff;
     margin: 0;
     padding: 0; }
     nav ul li {
@@ -99,7 +97,7 @@ nav {
 
 header {
   background-color: #276DC4;
-  height: 100vh;
+  height: calc(100vh - 100px);
   min-height: 600px;
   position: relative; }
   header.inverted {
