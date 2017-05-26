@@ -80,7 +80,7 @@ description: Developper.
         <div class="post">
           <div class="img" style="background-image: url('{{post.img}}')"></div>
           <div class="title">{{post.title}}</div>
-          <div class="desc">{{ post.content | split:'<!--break-->' | first }}</div>
+          <div class="desc">{{ post.excerpt }}</div>
         </div>
       </a>
     {% endfor %}
