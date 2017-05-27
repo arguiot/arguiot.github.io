@@ -1,21 +1,4 @@
-// $(window).scroll(function() {
-//   var wScroll = $(this).scrollTop();
-//   var jumpIn  = $('header').height();
-//   var jumpOut = $('#docs-cta').offset().top - wScroll - $(this).height() + 200;
-//   if (wScroll >= jumpIn && jumpOut > 0) {
-//     $('.gist.js-activated').addClass('visible')
-//   } else {
-//     $('.gist.js-activated').removeClass('visible')
-//   }
-// });
-
-$('nav .hamburger').click(() => {
-  $('.js-toggled').toggleClass('visible');
-  if ($(".js-toggled").hasClass("visible")) {
-		$("body").scrollDisable();
-	}
-});
-
+function _possibleConstructorReturn(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function _inherits(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function e(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,n,r){return n&&e(t.prototype,n),r&&e(t,r),t}}(),DisplayJS=function e(t){_classCallCheck(this,e),this.obj=t},_DOM_DJS=function(e){function t(){return _classCallCheck(this,t),_possibleConstructorReturn(this,(t.__proto__||Object.getPrototypeOf(t)).apply(this,arguments))}return _inherits(t,e),_createClass(t,[{key:"var",value:function(e){var t=this,n=function(){for(var e=document.querySelectorAll("[var]"),n=0;n<e.length;n++){var r=e[n].getAttribute("var");e[n].innerHTML=t.obj[r]}};e?window.setInterval(function(){n()},e):n()}},{key:"target",value:function(e){if(!e)var e=function(){};var t=function(){return document.addEventListener?function(e,t,n){e.addEventListener(t,n,!1)}:function(e,t,n){e.attachEvent("on"+t,n)}}(),n=this.obj;[].forEach.call(document.querySelectorAll("[target]"),function(r,o,a){t(a[o],"change",function(){var t=a[o].getAttribute("target");n[t]=this.value,e()}),t(a[o],"keydown",function(){var t=a[o].getAttribute("target");n[t]=this.value,e()}),t(a[o],"input",function(){var t=a[o].getAttribute("target");n[t]=this.value,e()}),t(a[o],"paste",function(){var t=a[o].getAttribute("target");n[t]=this.value,e()})})}},{key:"text",value:function(e,t){e[0].innerHTML=t}},{key:"prepend",value:function(e,t){var n=document.createElement("div");n.innerHTML=t,e[0].insertBefore(n,e.firstChild)}},{key:"append",value:function(e,t){e[0].innerHTML+=t}},{key:"select",value:function(e){return document.querySelectorAll(e)}},{key:"empty",value:function(e){e[0].innerHTML=null}},{key:"remove",value:function(e){e[0].parentNode.removeChild(e)}},{key:"on",value:function(e,t,n){return function(){return document.addEventListener?function(e,t,n){e[0].addEventListener(t,n,!1)}:function(e,t,n){e[0].attachEvent("on"+t,n)}}()(e[0],t,n)}},{key:"show",value:function(e){return e[0].style.display="block",!0}},{key:"hide",value:function(e){return e[0].style.display="none",!0}},{key:"ajax",value:function(e,t,n){var r=new XMLHttpRequest;r.open(t,e,!0),r.onload=function(){if(r.status>=200&&r.status<400){var e=r.responseText;n(e)}else console.error("DisplayJS error: The ajax request returned an error.")},r.onerror=function(){},r.send()}},{key:"hasClass",value:function(e,t){return e[0].classList?e[0].classList.contains(t):!!e[0].className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))}},{key:"addClass",value:function(e,t){e[0].classList?e[0].classList.add(t):hasClass(e[0],t)||(e[0].className+=" "+t)}},{key:"removeClass",value:function(e,t){if(e[0].classList)e[0].classList.remove(t);else if(hasClass(e[0],t)){var n=new RegExp("(\\s|^)"+t+"(\\s|$)");e[0].className=e[0].className.replace(n," ")}}},{key:"toggleClass",value:function(e,t){var n=e[0].className,r=new RegExp("\\b"+t+"\\b"),o=n.match(r);t=t.replace(/\s+/g,""),e[0].className=o?n.replace(r,""):n+t}},{key:"each",value:function(e,t){for(var n=0;n<e.length;n++)t(e[n])}},{key:"style",value:function(e,t,n){e[0].style[t]=n}},{key:"getStyle",value:function(e,t){var n=void 0,r=(e[0].ownerDocument||document).defaultView;return r&&r.getComputedStyle?(t=t.replace(/([A-Z])/g,"-$1").toLowerCase(),r.getComputedStyle(e,null).getPropertyValue(t)):e[0].currentStyle?(t=t.replace(/\-(\w)/g,function(e,t){return t.toUpperCase()}),n=e[0].currentStyle[t],/^\d+(em|pt|%|ex)?$/i.test(n)?function(t){var n=e[0].style.left,r=e[0].runtimeStyle.left;return e[0].runtimeStyle.left=e[0].currentStyle.left,e[0].style.left=t||0,t=e.style.pixelLeft+"px",e[0].style.left=n,e[0].runtimeStyle.left=r,t}(n):n):void 0}},{key:"load",value:function(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onload=function(){if(n.status>=200&&n.status<400){var t=n.responseText;json=function(e,t){function n(e,t){t.type=e.nodeName;var r=e.childNodes;if(null!=r&&r.length){t.content=[];for(var o=0;o<r.length;o++)3==r[o].nodeType?t.content.push(r[o].nodeValue):(t.content.push({}),n(r[o],t.content[t.content.length-1]))}if(null!=e.attributes&&e.attributes.length){t.attributes={};for(var o=0;o<e.attributes.length;o++)t.attributes[e.attributes[o].nodeName]=e.attributes[o].nodeValue}}var r={};return"string"==typeof e&&(window.DOMParser?(parser=new DOMParser,docNode=parser.parseFromString(e,"text/xml")):(docNode=new ActiveXObject("Microsoft.XMLDOM"),docNode.async=!1,docNode.loadXML(e)),e=docNode.firstChild),n(e,r),t?JSON.stringify(r):r}(t,!0),e[0].innerHTML=json[e[0]]}else console.error("DisplayJS error: The load request returned an error.")},n.onerror=function(){console.error("DisplayJS error: The load request returned an error. Please, check your connection.")},n.send()}},{key:"fadeIn",value:function(e){e.style.opacity=0;var t=+new Date;!function n(){e.style.opacity=+e.style.opacity+(new Date-t)/400,t=+new Date,+e.style.opacity<1&&(window.requestAnimationFrame&&requestAnimationFrame(n)||setTimeout(n,16))}()}},{key:"custom",value:function(e,t){var n=this,r=function(){for(var t=document.querySelectorAll("["+e+"]"),r=0;r<t.length;r++){var o=t[r].getAttribute(e);t[r].innerHTML=n.obj[o]}};t?window.setInterval(function(){r()},t):r()}}]),t}(DisplayJS);
 $(window).scroll(function () {
 	const wScroll = $(this).scrollTop();
 	  const jumpIn  = $('header').height() + 100;
@@ -28,17 +11,38 @@ $(window).scroll(function () {
 		'top': `${0-($(this).scrollTop() / 3)}px`
 	});
 });
-$(document).ready(() => {
-	$.getJSON("https://unpkg.com/noobscroll?json", data => {
-		let size = data.size / 1024;
-		size = Math.round(size * 100) / 100
-		$(".kb").text(size);
-	});
-});
-// Copyright (c) 2014 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-// extract from chromium source code by @liuwayong
+var rendered = {
+	age: 0,
+};
+var DJS = new _DOM_DJS(rendered);
+DJS.var(1000/30);
+function ageCalc() {
+  var minutes = 1000 * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365.25;
+
+  var d = new Date("May 22 2002, 20:45");
+  var dt = d.getDate();
+  var mn = d.getMonth();
+  mn++;
+  var yy = d.getFullYear();
+  var date1 = new Date(mn + "/" + dt + "/" + yy);
+
+  var date2 = new Date();
+  var timeDiff = (date2.getTime() - date1.getTime());
+  var age = (timeDiff / years);
+  age = parseFloat(Math.round(age * 1000000000000000) / 1000000000000000).toFixed(15);
+
+  rendered.age = age;
+
+  setTimeout("ageCalc()", 1000/30);
+
+}
+window.onload = ageCalc();
+function convertDigitIn(str) {
+    return str.split('/').reverse().join('/');
+}
 (function () {
     'use strict';
     /**
@@ -2712,3 +2716,4 @@ function onDocumentLoad() {
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentLoad);
+
