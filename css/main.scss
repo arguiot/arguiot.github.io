@@ -335,7 +335,13 @@ h1:not(.title) {
   position: relative;
   top: 50px;
 }
-
+// .proj-grid {
+//   position: relative;
+//   display: flex;
+//   align-content: flex-start;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+// }
 @media (max-width: 480px) {
   header .header-content {
     img {
