@@ -10,7 +10,7 @@ DJS.ajax("https://api.github.com/users/arguiot/repos", "GET", function (data) {
   DJS.empty(DJS.select(".proj-grid"));
   function logArrayElements(element, index, array) {
     // console.log("obj[" + index + "] = " + element.name);
-    DJS.append(DJS.select(".proj-grid"),"<li><b><a href=\""+element.url+"\">"+element.name+"</b> : "+element.description+"</a></li>");
+    DJS.append(DJS.select(".proj-grid"),"<li><b><a href=\""+element.html_url+"\">"+element.name+"</b> : "+element.description+"</a></li>");
     
   }
   obj.forEach(logArrayElements);
