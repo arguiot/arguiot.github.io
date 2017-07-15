@@ -17,6 +17,12 @@ noobscroll:
   docs:       https://github.com/arguiot/NoobScroll/wiki
   stargazers: https://github.com/arguiot/NoobScroll/stargazers
   cdn:        https://unpkg.com/noobscroll
+displayjs:
+  repo:       https://github.com/arguiot/DisplayJS
+  download:   https://unpkg.com/display.js
+  docs:       https://github.com/arguiot/DisplayJS/wiki
+  stargazers: https://github.com/arguiot/DisplayJS/stargazers
+  cdn:        https://unpkg.com/display.js
 
 author:
   github:   https://github.com/arguiot
