@@ -1,6 +1,6 @@
 var rendered = {
 };
-var DJS = new _DOM_DJS(rendered);
+var DJS = new DisplayJS(rendered);
 // DJS.var(1000/30);
 DJS.ajax("https://api.github.com/users/arguiot/repos", "GET", "", function (data) {
   var obj = JSON.parse(data);
@@ -10,7 +10,7 @@ DJS.ajax("https://api.github.com/users/arguiot/repos", "GET", "", function (data
   function logArrayElements(element, index, array) {
     // console.log("obj[" + index + "] = " + element.name);
     DJS.append(DJS.select(".proj-grid"),"<li><b><a href=\""+element.html_url+"\">"+element.name+"</b> : "+element.description+"</a></li>");
-    
+
   }
   obj.forEach(logArrayElements);
 });
@@ -752,7 +752,7 @@ DJS.ajax("https://api.github.com/users/arguiot/repos", "GET", "", function (data
          * Game over state.
          */
         gameOver: function () {
-            
+
             vibrate(200);
 
             this.stop();
@@ -811,7 +811,7 @@ DJS.ajax("https://api.github.com/users/arguiot/repos", "GET", "", function (data
                 this.distanceMeter.reset(this.highestScore);
                 this.horizon.reset();
                 this.tRex.reset();
-                
+
                 this.invert(true);
                 this.update();
             }
@@ -2687,4 +2687,3 @@ function onDocumentLoad() {
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentLoad);
-
