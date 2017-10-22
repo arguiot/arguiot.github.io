@@ -11,12 +11,10 @@ permalink:  pretty
 
 # Custom variables
 version:    v1.0.3
-noobscroll:
-  repo:       https://github.com/arguiot/NoobScroll
-  download:   https://github.com/arguiot/NoobScroll/releases/download/v1.0.2/noobscroll.min.js
-  docs:       https://github.com/arguiot/NoobScroll/wiki
-  stargazers: https://github.com/arguiot/NoobScroll/stargazers
-  cdn:        https://unpkg.com/noobscroll
+eyejs:
+  repo:       https://github.com/arguiot/EyeJS
+  docs:       https://github.com/arguiot/EyeJS/wiki
+  stargazers: https://github.com/arguiot/EyeJS/stargazers
 displayjs:
   repo:       https://github.com/arguiot/DisplayJS
   download:   https://unpkg.com/display.js

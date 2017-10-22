@@ -13,7 +13,7 @@ $(window).scroll(function () {
 var rendered = {
 	age: 0,
 };
-var DJS = new _DOM_DJS(rendered);
+var DJS = new DisplayJS(rendered);
 DJS.var(1000/30);
 function ageCalc() {
   var minutes = 1000 * 60;
@@ -780,7 +780,7 @@ function convertDigitIn(str) {
          * Game over state.
          */
         gameOver: function () {
-            
+
             vibrate(200);
 
             this.stop();
@@ -839,7 +839,7 @@ function convertDigitIn(str) {
                 this.distanceMeter.reset(this.highestScore);
                 this.horizon.reset();
                 this.tRex.reset();
-                
+
                 this.invert(true);
                 this.update();
             }
@@ -2715,4 +2715,3 @@ function onDocumentLoad() {
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentLoad);
-
