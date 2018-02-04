@@ -1,16 +1,19 @@
 # markdown adn highlighter
-markdown:    kramdown
-highlighter: rouge
+markdown:     kramdown
+highlighter:  rouge
 
 # permalinks
-permalink:  pretty
+permalink:    pretty
 
 # Server
-#url:        noobscroll.js.org
-#baseurl:    ./
+#url:         noobscroll.js.org
+# baseurl:      ./
 
 # Custom variables
-version:    v1.0.3
+version:      v1.0.3
+theoremjs:
+    repo:     https://github.com/arguiot/TheoremJS
+    docs:     https://theorem.js.org/docs
 eyejs:
   repo:       https://github.com/arguiot/EyeJS
   docs:       https://github.com/arguiot/EyeJS/wiki
@@ -23,12 +26,12 @@ displayjs:
   cdn:        https://unpkg.com/display.js
 
 author:
-  github:   https://github.com/arguiot
-  twitter:  https://twitter.com/arthur_guiot
-  mail: mailto:arguiot@gmail.com
-  facebook: https://www.facebook.com/profile.php?id=100012180104056
+  github:     https://github.com/arguiot
+  twitter:    https://twitter.com/arthur_guiot
+  mail:       mailto:arguiot@gmail.com
+  facebook:   https://www.facebook.com/profile.php?id=100012180104056
 inspiration:
-  github:   https://github.com/lucasgruwez
+  github:     https://github.com/lucasgruwez
 
-tweet:      https://twitter.com/intent/tweet?screen_name=arthur_guiot
-about:      about
+tweet:        https://twitter.com/intent/tweet?screen_name=arthur_guiot
+about:        about

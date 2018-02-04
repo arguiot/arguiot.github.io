@@ -24,7 +24,14 @@ html, body {
   max-width: 100%; }
 
 a {
-  color: inherit; }
+  color: inherit;
+  text-decoration: none !important; }
+
+a:hover {
+  text-decoration: underline; }
+
+a > h2 {
+  color: black; }
 
 nav {
   height: 75px;
@@ -130,29 +137,28 @@ header {
         font-size: 16px; }
 
 section {
-  background-color: #ffffff; }
-  section#features {
-    padding: 100px 0; }
-    section#features a {
-      color: #276DC4; }
-    section#features .col {
-      text-align: center; }
-      section#features .col img {
-        height: 100px; }
-      section#features .col i {
-        font-size: 100px;
-        color: black; }
-    section#features a.btn {
-      position: absolute;
-      width: 221px;
-      margin-top: 75px;
-      margin-left: calc(50vw - 221px / 2);
-      background-color: #276DC4;
-      color: #ffffff;
-      border-radius: 2pt;
-      font-size: 24px;
-      padding: 15px 35px;
-      text-decoration: none; }
+  background-color: #ffffff;
+  padding: 100px 0; }
+  section#features a {
+    color: #276DC4; }
+  section#features .col {
+    text-align: center; }
+    section#features .col img {
+      height: 100px; }
+    section#features .col i {
+      font-size: 100px;
+      color: black; }
+  section#features a.btn {
+    position: absolute;
+    width: 221px;
+    margin-top: 75px;
+    margin-left: calc(50vw - 221px / 2);
+    background-color: #276DC4;
+    color: #ffffff;
+    border-radius: 2pt;
+    font-size: 24px;
+    padding: 15px 35px;
+    text-decoration: none; }
   section#proj {
     background-color: #276DC4;
     padding: 75px 0;
