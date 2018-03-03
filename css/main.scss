@@ -318,18 +318,21 @@ article {
 	margin: 0 auto;
 	box-sizing: border-box;
 	padding: 50px;
+
 	section {
 		box-sizing: border-box;
 		padding: 50px;
-
+		margin-bottom: 30px;
 		.who {
 			background: $sky-blue;
 		}
+
 		h1 {
 			font-family: 'Dry Brush', sans-serif;
 			font-size: 6vw;
 			font-weight: 400;
 			text-align: center;
+			text-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
 		}
 
 		p {
@@ -337,6 +340,26 @@ article {
 		}
 	}
 }
+.col {
+	text-align: center;
+	&:hover {
+		img {
+			height: 220px;
+		}
+	}
+	img {
+		height: 200px;
+		padding: 20px;
+		transition: height 100ms ease-in-out;
+	}
+
+	i {
+		font-size: 100px;
+		color: black;
+	}
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
