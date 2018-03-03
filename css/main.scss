@@ -306,6 +306,7 @@ body {
 	}
 }
 
+$sky-blue: #87CEEB;
 article {
 	position: absolute;
 	top: 100vh;
@@ -318,26 +319,21 @@ article {
 	box-sizing: border-box;
 	padding: 50px;
 	section {
-		margin-bottom: 50px;
-		height: 431px;
-		background: white;
-		box-shadow: 0px 70px 80px -40px rgba(0, 0, 0, 0.8), 0px 5px 20px rgba(0, 0, 0, 0.4);
+		box-sizing: border-box;
+		padding: 50px;
+
+		.who {
+			background: $sky-blue;
+		}
 		h1 {
 			font-family: 'Dry Brush', sans-serif;
 			font-size: 6vw;
 			font-weight: 400;
-			line-height: 6vw;
-			position: absolute;
-			top: -3vw;
-			left: 10vw;
+			text-align: center;
 		}
 
 		p {
-			position: relative;
-			top: 100px;
-			width: 320px;
-			line-height: 48px;
-			margin: 0 auto;
+			text-align: center;
 		}
 	}
 }

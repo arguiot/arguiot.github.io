@@ -32,3 +32,33 @@ class Menu {
 }
 
 const m = new Menu()
+
+class Parralax {
+	constructor() {
+		this.els = [...arguments]
+		this._addEventListeners()
+	}
+	append() {
+		this.els.append(...arguments)
+	}
+	_addEventListeners() {
+		window.addEventListener("scroll", () => {
+			window.requestAnimationFrame(() => {
+				this.render(window.scrollY);
+			})
+		})
+	}
+	render(y) {
+		for (let i = 0; i < this.els.length; i++) {
+			const elH = window.getComputedStyle(this.els[i])
+			const wH = window.innerHeight
+			const elY = this.els[i].scrollTop
+			const diff = elY - y;
+			const percent = (diff) / wH;
+			const f = parseFloat(this.els[i].getAttribute("f"))
+			this.els[i].style.transform = `translateY(${percent * 1000 * f}px)`
+		}
+	}
+}
+
+const p = new Parralax(...document.querySelectorAll(".header > *"), ...document.querySelectorAll("section > *"))
