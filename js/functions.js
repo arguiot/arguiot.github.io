@@ -100,3 +100,15 @@ const p = new Parralax(
     ...document.querySelectorAll(".row"),
 	document.querySelector(".container")
 )
+
+
+
+
+
+function detectmob() {
+    return window.innerWidth < 1024 && window.innerHeight < 800
+}
+
+if (detectmob()) {
+	window.location = "https://arguiot.github.io/old"
+}
