@@ -359,7 +359,33 @@ article {
 	}
 }
 
-
+footer {
+	position: sticky;
+	margin-top: 300vh;
+	width: 100vw;
+	height: 100vh;
+	background: #292929;
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 960px;
+		max-width: 80%;
+		margin: 0 auto;
+		height: 100%;
+		img {
+			width: 100px;
+		}
+		.copyright {
+			width: calc(960px - 20vw);
+			text-align: right;
+			color: white;
+			font-family: 'Roboto Mono', serif;
+			font-size: 1em;
+		}
+	}
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

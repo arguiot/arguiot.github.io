@@ -37,7 +37,8 @@ class Parralax {
     constructor() {
         this.els = [...arguments]
         this._addEventListeners()
-        this.f = this.genFactor()
+        this.f = this.genFactor()[0]
+		this.m = this.genFactor()[1]
     }
     append() {
         this.els.push(...arguments)
@@ -50,11 +51,13 @@ class Parralax {
         })
     }
     genFactor() {
-        let out = []
+        let f = []
+		let m = []
         for (let i = 0; i < this.els.length; i++) {
-            out.push(parseFloat(this.els[i].getAttribute("f")))
+            f.push(parseFloat(this.els[i].getAttribute("f")))
+			m.push(isNaN(parseFloat(this.els[i].getAttribute("m"))) ? 0 : parseFloat(this.els[i].getAttribute("m")))
         }
-        return out
+        return [f, m]
     }
     isInView(el) {
         const rect = el.getBoundingClientRect();
@@ -67,7 +70,8 @@ class Parralax {
             const diff = elY - y;
             const percent = diff / wH;
             const f = this.f[i]
-            this.els[i].style.transform = `translate3d(0, ${percent * 1000 * f}px, 0)`
+			const m = this.m[i]
+            this.els[i].style.transform = `translate3d(0, ${percent * 1000 * f + (wH / 100 * m)}px, 0)`
         }
     }
 }
@@ -75,5 +79,6 @@ class Parralax {
 const p = new Parralax(
     ...document.querySelectorAll(".header > *"),
     ...document.querySelectorAll("section > *"),
-    ...document.querySelectorAll(".row")
+    ...document.querySelectorAll(".row"),
+	document.querySelector(".container")
 )
