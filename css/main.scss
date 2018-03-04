@@ -322,7 +322,7 @@ article {
 	section {
 		box-sizing: border-box;
 		padding: 50px;
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 		.who {
 			background: $sky-blue;
 		}
@@ -360,8 +360,8 @@ article {
 }
 
 footer {
-	position: sticky;
-	margin-top: 300vh;
+	position: absolute;
+	top: 300vh;
 	width: 100vw;
 	height: 100vh;
 	background: #292929;
@@ -385,6 +385,12 @@ footer {
 			font-size: 1em;
 		}
 	}
+}
+.fake {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 300vh;
 }
 /* ==========================================================================
    Helper classes
