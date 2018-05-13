@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{{page.title}}</title>
+	<meta name="description" content="{{page.description}}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="https://unpkg.com/normalize.css">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+	<!--[if lte IE 9]
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+	{{content}}
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99939279-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-99939279-1');
+	</script>
+	<script src="https://unpkg.com/protype.js" charset="utf-8"></script>
+	<script src="/js/functions.js"></script>
+	<script src="/js/projects.js" charset="utf-8"></script>
+</body>
+
+</html>

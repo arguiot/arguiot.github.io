@@ -1,0 +1,69 @@
+---
+layout: html
+title: Arthur Guiot
+description: Arthur Guiot, I'm a student and a developer
+---
+
+<div class="main" protype="main">
+	<header>
+		<div class="stars"></div>
+		<div class="stars-lg"></div>
+		<figure class="shooting-star">
+			<img src="img/shooting-star.svg" alt="shooting star">
+		</figure>
+		<figure class="shooting-star-right">
+			<img src="img/shooting-star.svg" alt="shooting star">
+		</figure>
+		<div class="left">
+			<img src="img/logo.png" alt="">
+		</div>
+		<div class="right">
+			<h1>
+				Arthur Guiot
+			</h1>
+			<h2>
+				I'm a student who is passionated about math, computers and programming.
+			</h2>
+		</div>
+	</header>
+	<div class="grid">
+		{% for i in site.data.projects %}
+			<div url="{{ i.link }}" class="item" style="color: {{ i.color }}; background: {{ i.background }}">
+				<img src="{{ i.logo }}" alt="{{ i.name }}">
+				<h2>
+					{{ i.name }}
+				</h2>
+				<p>
+					{{ i.name }} is {{ i.desc }}
+				</p>
+			</div>
+		{% endfor %}
+	</div>
+	<article>
+		<section class="who">
+			<h1>
+				Who am I?
+			</h1>
+			<p>
+				My name is Arthur Guiot, I'm <span class="age"></span> , so I'm a student. I love math, computers and programming. I'm french 🇫🇷 🐓, but I code in english because I want to do things that are accessible to everyone. I currently live in <span class="location">Hong Kong</span> with my family.
+			</p>
+		</section>
+		<section class="what">
+			<h1>
+				What do I do / code?
+			</h1>
+			<p>
+				I mostly code websites, framework and apps in Swift. Above you saw my most latest projects, but I do have a lot more projects, so go checkout my <a href="https://github.com/arguiot">GitHub</a>. But I'm always trying to learn new things, to push my limits.
+			</p>
+		</section>
+		<section>
+			<h1>
+				Blog
+			</h1>
+			<h2>My personnal blog</h2>
+			<p>
+
+			</p>
+		</section>
+	</article>
+</div>
