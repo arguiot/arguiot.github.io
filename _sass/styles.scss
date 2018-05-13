@@ -212,9 +212,10 @@ article {
 	}
 
 	.blog {
+		position: relative;
+		left: calc(-50vw + 420px);
 		padding-top: 100px;
 		width: 100vw;
-		margin-left: -50%;
 		background: white;
 		color: black;
 
@@ -267,7 +268,9 @@ footer {
 			}
 		}
 	}
-
+	.blog {
+		left: calc(-10vw) !important;
+	}
 	.grid {
 		.item {
 			width: 100%;
