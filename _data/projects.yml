@@ -1,0 +1,24 @@
+- name: ProType
+  desc: the next generation JavaScript framework
+  link: https://protype.js.org
+  logo: https://protype.js.org/img/ProType.svg
+  color: white
+  background: black
+- name: CrypTools - iOS
+  desc: the iOS version of <a href="https://cryptools.github.io/learn">learn</a>, a platform to learn cryptography (that I also created)
+  link: https://cryptools.github.io
+  logo: https://cryptools.github.io/img/logo-black.svg
+  color: black
+  background: white
+- name: TheoremJS
+  desc: a Math library for computation in JavaScript
+  link: https://theorem.js.org
+  logo: https://theorem.js.org/img/TheoremJS.svg
+  color: black
+  background: white
+- name: Glottologist
+  desc: a framework for translating websites
+  link: https://glottologist.js.org
+  logo: https://glottologist.js.org/img/Logo.svg
+  color: white
+  background: "#384048"

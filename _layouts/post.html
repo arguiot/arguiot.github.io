@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>{{page.title}}</title>
+	<title>Arthur Guiot - {{page.title}}</title>
 	<meta name="description" content="{{page.description}}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,15 +12,25 @@
 
 	<!-- stylesheets -->
 	<link rel="stylesheet" href="https://unpkg.com/normalize.css">
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/css/rouge.css">
 </head>
 
 <body>
 	<!--[if lte IE 9]
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
-	{{content}}
+	<a href="/" class="exit">
+		<i data-icon="times"></i>
+	</a>
+	<div class="post">
+		<h1 class="title">
+			{{ page.title }}
+		</h1>
+		<div class="ago">{{ page.date | date: "%-d %B %Y" }}</div>
+		<hr>
+		{{content}}
+	</div>
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99939279-1"></script>
 	<script>
@@ -33,14 +43,13 @@
 
 		gtag('config', 'UA-99939279-1');
 	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
-	<script src="https://unpkg.com/protype.js" charset="utf-8"></script>
-	<script src="/js/functions.js"></script>
-	<script src="/js/items.js" charset="utf-8"></script>
 	<script src="https://unpkg.com/lunar-icons/dist/lunar-icons.min.js" charset="utf-8"></script>
 	<script>
 		lunarIcons.replace()
 	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+	<script src="/js/post.js" charset="utf-8"></script>
 </body>
 
 </html>

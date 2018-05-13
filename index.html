@@ -1,111 +1,93 @@
 ---
 layout: html
-title: Arthur Guiot / arguiot - personnal webiste
-description: Arthur Guiot's personnal webiste.- Landing page
+title: Arthur Guiot
+description: Arthur Guiot, I'm a student and a developer
 ---
 
-
-<!-- Header -->
-
-<header>
-
-	<div class="header-content">
-
-		<!-- This div is needed to ensure that the content is centered -->
-		<img src="img/logo.png" alt="Arguiot's logo logo" height="100px" />
-
-		<h1 class="title">Arthur Guiot</h1>
-
-		<p>Also known as arguiot, I'm a student 👨‍🎓 who is interested in programming and math.</p>
-		<!-- <p>/!\ We are still developping Noob Scroll</p> -->
-		<p class="small">Follow me: <a href="https://twitter.com/arthur_guiot">@arthur_guiot</a></p>
-
+<div class="main" protype="main">
+	<header>
+		<div class="nav">
+			<a href="https://github.com/arguiot"><i data-icon="github"></i></a>
+			<a href="https://twitter.com/arthur_guiot"><i data-icon="twitter"></i></a>
+			<a href="https://www.facebook.com/profile.php?id=100012180104056"><i data-icon="facebook"></i></a>
+			<a href="mailto:arguiot@gmail.com"><i data-icon="mail"></i></a>
+		</div>
+		<div class="stars"></div>
+		<div class="stars-lg"></div>
+		<figure class="shooting-star">
+			<img src="img/shooting-star.svg" alt="shooting star">
+		</figure>
+		<figure class="shooting-star-right">
+			<img src="img/shooting-star.svg" alt="shooting star">
+		</figure>
+		<div class="left">
+			<img src="img/logo.png" alt="">
+		</div>
+		<div class="right">
+			<h1>
+				Arthur Guiot
+			</h1>
+			<h2>
+				I'm a student who is passionated about math, computers and programming.
+			</h2>
+		</div>
+	</header>
+	<div class="grid">
+		{% for i in site.data.projects %}
+			<div url="{{ i.link }}" class="item" style="color: {{ i.color }}; background: {{ i.background }}">
+				<img src="{{ i.logo }}" alt="{{ i.name }}">
+				<h2>
+					{{ i.name }}
+				</h2>
+				<p>
+					{{ i.name }} is {{ i.desc }}
+				</p>
+			</div>
+		{% endfor %}
 	</div>
-
-</header>
-
-<!-- Main content -->
-
-<main>
-
-	<!-- Grid features -->
-
-	<section id="features">
-		<h1 class="center">Latest project:</h1>
-		<div class="grid">
-			<div class="row">
-				<!-- <div class="col col-3-of-12 col-m-4-of-4">
-
-          <img src="img/icon-simple.svg" alt="Code icon"/>
-          <h2>Simple</h2>
-          <p>NoobScroll is design for noobs (just kidding 😂), that's why it's incredibly simple to use 😉!</p>
-
-        </div> -->
-				<div class="col col-6-of-12 col-m-4-of-4">
-					<a href="{{site.theoremjs.repo}}"><img src="https://theorem.js.org/img/TheoremJS.svg" alt="Project's icon"/></a>
-					<h2>TheoremJS</h2>
-					<p>TheoremJS is a Math framework for computation in JavaScript</p>
-
-				</div>
-				<div class="col col-6-of-12 col-m-4-of-4">
-					<a href="https://arguiot.github.io/Descartes"><img src="https://arguiot.github.io/Descartes/assets/logo.svg" alt="Project's icon"/></a>
-					<h2>Descartes</h2>
-					<p>A small plotting JavaScript library, made for TheoremJS</p>
-
-				</div>
-				<div class="col col-6-of-12 col-m-4-of-4">
-
-					<a href="{{site.eyejs.repo}}"><img src="img/EyeJS-logo-black.svg" alt="Project's icon"/></a>
-					<h2>EyeJS</h2>
-					<p>EyeJS is a JavaScript testing framework for the real world</p>
-
-				</div>
-				<div class="col col-6-of-12 col-m-4-of-4">
-
-					<a href="{{site.displayjs.repo}}"><img src="img/displayjs-logo-black.svg" alt="Project's icon"/></a>
-					<h2>DisplayJS</h2>
-					<p>A simple JavaScript framework for building ambitious UIs!</p>
-
-
-				</div>
+	<article>
+		<section class="who">
+			<h1>
+				Who am I?
+			</h1>
+			<p>
+				My name is Arthur Guiot, I'm <span class="age"></span> , so I'm a student. I love math, computers and programming. I'm french 🇫🇷 🐓, but I code in english because I want to do things that are accessible to everyone. I currently live in <span class="location">Hong Kong</span> with my family.
+			</p>
+		</section>
+		<section class="what">
+			<h1>
+				What do I do / code?
+			</h1>
+			<p>
+				I mostly code websites, framework and apps in Swift. Above you saw my most latest projects, but I do have a lot more projects, so go checkout my <a href="https://github.com/arguiot">GitHub</a>. But I'm always trying to learn new things, to push my limits.
+			</p>
+		</section>
+		<section class="blog">
+			<h1>
+				Blog
+			</h1>
+			<h2>My personnal blog</h2>
+			<div class="grid">
+				{% for i in site.posts limit: 20 %}
+					<div url="{{ i.url }}" class="item" style="background: linear-gradient(0, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ i.image }})">
+						<h2>
+							{{ i.title }}
+						</h2>
+						<p class="ago">
+							{{ i.date | date: "%-d %B %Y" }}
+						</p>
+					</div>
+				{% endfor %}
 			</div>
-		</div>
-		<a href="projects" class="btn center">
-      Other projects
-    </a>
-	</section>
-	<section id="org">
-		<h1 class="center">Organizations</h1>
-		<p class="center">All my organizations:</p>
-		<div class="grid">
-			<div class="row">
-				<div class="col col-6-of-12 col-m-4-of-4">
-					<a href="https://cryptools.github.io"><img src="https://cryptools.github.io/img/logo-black.svg" alt="CrypTools" class="center" height="200"></a>
-					<p>
-						CrypTools is a cryptographic organization
-					</p>
-				</div>
-				<div class="col col-6-of-12 col-m-4-of-4">
-					<a href="https://white-frameworks.github.io"><img src="https://cdn.rawgit.com/white-frameworks/white-frameworks.github.io/master/assets/img/White.svg" alt="CrypTools" class="center" height="200"></a>
-					<p>
-						White-FFF was a PHP framework, but was canceled in 2016
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Docs preview -->
-
-	<section id="blog">
-		<div class="wrapper">
-			<h2>Tweets:</h2>
-			<a class="twitter-timeline" data-height="750" data-theme="light" href="https://twitter.com/arthur_guiot">Tweets by arthur_guiot</a>
-			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-	</section>
-
-	<!-- Docs call to action -->
-
-	<section id="tweet">
-		<a href="{{site.tweet}}" class="btn">Tweet me!</a>
-	</section>
-</main>
+		</section>
+	</article>
+	<footer>
+		<h2>Made with <i data-icon="heart">❤️</i> by Arthur Guiot</h2>
+		<p>Copyright <i data-icon="copyright">©</i> Arthur Guiot <span class="year"></span></p>
+	</footer>
+</div>
+<div class="loading" protype="loading">
+	<div class="loadingH">
+		<h1>Loading...</h1>
+	</div>
+</div>
