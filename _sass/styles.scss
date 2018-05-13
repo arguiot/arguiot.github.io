@@ -49,7 +49,19 @@ header {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-
+	.nav {
+		position: absolute;
+		top: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		a {
+			width: 200px;
+			font-size: 40px;
+			text-align: center;
+		}
+	}
 	.left {
 		width: 480px;
 		display: flex;
