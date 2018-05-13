@@ -52,16 +52,6 @@ class MainView extends P.ViewController {
 		})
 	}
 }
-class LoadView extends P.ViewController {
-	willShow() {
-		setTimeout(() => {
-			window.location = P.workspace.url
-		}, 500)
-		this.view.addEventListener("click", e => {
-			P.performTransition("main")
-		})
-	}
-}
-P.autoMount(MainView, LoadView)
+P.autoMount(MainView)
 
 P.set("main")
