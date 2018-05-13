@@ -4,7 +4,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: #22292C;
-	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -55,6 +55,7 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		img {
 			margin: 0 auto;
 			width: 300px;
@@ -107,7 +108,9 @@ header {
 		top: 10%;
 		transform: rotate(30deg);
 		pointer-events: none;
+
 		img {
+			opacity: 0;
 			animation: 4s linear 2.5s shooting-star infinite;
 		}
 	}
@@ -120,11 +123,14 @@ header {
 		width: 130px;
 		transform: rotate(-235deg);
 		pointer-events: none;
+
 		img {
+			opacity: 0;
 			animation: 4s linear 2.5s shooting-star infinite;
 		}
 	}
 }
+
 .grid {
 	display: flex;
 	flex-direction: row;
@@ -132,6 +138,8 @@ header {
 	align-items: center;
 	box-sizing: border-box;
 	flex-wrap: wrap;
+	width: 100vw;
+
 	.item {
 		width: 50vw;
 		padding: 150px;
@@ -142,28 +150,39 @@ header {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		background-size: cover;
 		cursor: pointer;
+
 		h2 {
 			margin-top: 20px;
 		}
+
 		p {
 			margin-top: -24px;
 		}
+
 		img {
 			width: 100px;
 			height: 100px;
 			filter: drop-shadow(0 0 20px rgba(0,0,0,0.5));
 		}
-		h2, p, img {
+
+		h2,
+		img,
+		p {
 			transition: all 100ms ease-in-out;
 		}
+
 		&:hover {
-			h2, p, img {
+			h2,
+			img,
+			p {
 				transform: scale(1.1);
 			}
 		}
 	}
 }
+
 article {
 	width: 840px;
 	margin: 0 auto;
@@ -171,25 +190,55 @@ article {
 	color: white;
 	box-sizing: border-box;
 	padding-top: 100px;
-	padding-bottom: 100px;
+
 	h1 {
 		text-align: center;
 	}
+
 	p {
 		text-align: justify;
 	}
+
+	.blog {
+		padding-top: 100px;
+		width: 100vw;
+		margin-left: -50%;
+		background: white;
+		color: black;
+
+		.grid {
+			padding-top: 100px;
+		}
+
+		.grid > .item {
+			color: white;
+		}
+	}
 }
 
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	box-sizing: border-box;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
 @media (max-width: 1000px) {
 	h1 {
 		font-size: 37px;
 	}
+
 	h2 {
 		font-size: 22px;
 	}
+
 	p {
 		font-size: 12px;
 	}
+
 	header {
 		.left {
 			img {
@@ -197,14 +246,16 @@ article {
 				height: 200px;
 			}
 		}
+
 		.right {
 			text-align: center;
+
 			h2 {
 				text-align: center;
 			}
 		}
-
 	}
+
 	.grid {
 		.item {
 			width: 100%;
@@ -213,7 +264,7 @@ article {
 }
 @keyframes rotate360 {
 	to {
-		transform: rotateZ(360deg)
+		transform: rotateZ(360deg);
 	}
 }
 @keyframes pulse {
@@ -232,20 +283,33 @@ article {
 @keyframes shooting-star {
 	0% {
 		opacity: 1;
-		transform: scale(0) translate3d(0, 0, 0)
+		transform: scale(0) translate3d(0, 0, 0);
 	}
 
 	15% {
-		opacity: 1
+		opacity: 1;
 	}
 
 	25% {
 		opacity: 0;
-		transform: scale(1) translate3d(180px, 0, 0)
+		transform: scale(1) translate3d(180px, 0, 0);
 	}
 
 	100% {
 		opacity: 0;
-		transform: scale(0) translate3d(180px, 0, 0)
+		transform: scale(0) translate3d(180px, 0, 0);
 	}
+}
+@keyframes redirect {
+	to {
+		transform: translateX(-100vw);
+	}
+}
+
+.loadingH {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 100vh;
 }

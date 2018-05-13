@@ -9,10 +9,13 @@ class MainView extends P.ViewController {
 
 		this.projects = this.mountGroups(
 			this.view.querySelectorAll(".grid > .item"),
-			Projects
+			GridItems
 		)
 		this.age()
 		this.location()
+		this.article()
+
+		this.view.querySelector("span.year").innerHTML = new Date().getFullYear()
     }
     shooting(el, dir) {
         setInterval(() => {
@@ -42,8 +45,23 @@ class MainView extends P.ViewController {
 			this.view.querySelector("span.location").innerHTML = data.location
 		})
 	}
+	article() {
+		this.view.querySelectorAll('.ago').forEach(el => {
+			let time = moment(el.innerHTML)
+			el.innerHTML = time.fromNow()
+		})
+	}
 }
-
-P.autoMount(MainView)
+class LoadView extends P.ViewController {
+	willShow() {
+		setTimeout(() => {
+			window.location = P.workspace.url
+		}, 500)
+		this.view.addEventListener("click", e => {
+			P.performTransition("main")
+		})
+	}
+}
+P.autoMount(MainView, LoadView)
 
 P.set("main")

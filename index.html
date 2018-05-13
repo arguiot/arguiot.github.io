@@ -56,14 +56,32 @@ description: Arthur Guiot, I'm a student and a developer
 				I mostly code websites, framework and apps in Swift. Above you saw my most latest projects, but I do have a lot more projects, so go checkout my <a href="https://github.com/arguiot">GitHub</a>. But I'm always trying to learn new things, to push my limits.
 			</p>
 		</section>
-		<section>
+		<section class="blog">
 			<h1>
 				Blog
 			</h1>
 			<h2>My personnal blog</h2>
-			<p>
-
-			</p>
+			<div class="grid">
+				{% for i in site.posts limit: 20 %}
+					<div url="{{ i.url }}" class="item" style="background: linear-gradient(0, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ i.image }})">
+						<h2>
+							{{ i.title }}
+						</h2>
+						<p class="ago">
+							{{ i.date | date: "%-d %B %Y" }}
+						</p>
+					</div>
+				{% endfor %}
+			</div>
 		</section>
 	</article>
+	<footer>
+		<h2>Made with <i data-icon="heart">❤️</i> by Arthur Guiot</h2>
+		<p>Copyright <i data-icon="copyright">©</i> Arthur Guiot <span class="year"></span></p>
+	</footer>
+</div>
+<div class="loading" protype="loading">
+	<div class="loadingH">
+		<h1>Loading...</h1>
+	</div>
 </div>
