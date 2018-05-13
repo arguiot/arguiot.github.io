@@ -1,3 +1,4 @@
+---
 - name: ProType
   desc: the next generation JavaScript framework
   link: https://protype.js.org
@@ -5,7 +6,8 @@
   color: white
   background: black
 - name: CrypTools - iOS
-  desc: the iOS version of <a href="https://cryptools.github.io/learn">learn</a>, a platform to learn cryptography (that I also created)
+  desc: the iOS version of <a href="https://cryptools.github.io/learn">learn</a>,
+    a platform to learn cryptography (that I also created)
   link: https://cryptools.github.io
   logo: https://cryptools.github.io/img/logo-black.svg
   color: black
