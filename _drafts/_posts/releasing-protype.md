@@ -8,6 +8,6 @@ Today, I'm releasing [ProType](https://protype.js.org), a new kind of JavaScript
 
 # What is exactly ProType?
 
-![](/uploads/2018/05/19/ProType Banner.png)
+![ProType banner](/uploads/2018/05/19/ProType Banner.png)
 
-_<div align="center">ProType banner</div>_
+<div align="center">_ProType banner_</div>
