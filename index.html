@@ -69,7 +69,7 @@ description: Arthur Guiot, I'm a student and a developer
 			<h2>My personnal blog</h2>
 			<div class="grid">
 				{% for i in site.posts limit: 20 %}
-					<div url="{{ i.url }}" class="item" style="background: linear-gradient(0, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ i.image }})">
+					<div url="{{ i.url }}" class="item" style="background: linear-gradient(0, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ i.image | absolute_url }}); background-size: cover;">
 						<h2>
 							{{ i.title }}
 						</h2>
