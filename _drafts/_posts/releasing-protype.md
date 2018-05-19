@@ -10,4 +10,4 @@ Today, I'm releasing [ProType](https://protype.js.org), a new kind of JavaScript
 
 ![ProType banner](/uploads/2018/05/19/ProType Banner.png)
 
-<div align="center">_ProType banner_</div>
+<div align="center"><i>ProType banner<i></div>
