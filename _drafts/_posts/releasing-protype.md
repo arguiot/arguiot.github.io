@@ -10,7 +10,7 @@ Today, I'm releasing [ProType](https://protype.js.org), a new kind of JavaScript
 
 ![ProType banner](/uploads/2018/05/19/ProType Banner.png)
 
-<div align="center"><i>ProType banner<i></div>
+<div align="center"><i>ProType banner</i></div>
 
 ProType is JavaScript front end (browser) framework. It is object oriented only and help you separate tasks and views while staying productive.
 
@@ -23,3 +23,13 @@ _P.S. The word ProType comes from Prototype, a property used in JavaScript to ad
 # Give it a try
 
 You can give it try by visiting ProType's website:[ ]()[https://protype.js.org](https://protype.js.org)
+
+## Install ProType
+
+Installing ProType is an easy process: Just paste the following lines of code at the end of your `<body>` tag:
+```html
+<!-- Add this at the end of your body tag -->
+<script src="https://unpkg.com/protype.js" charset="utf-8"></script>
+<!-- Your script, make sure it's after ProType -->
+<script src="js/main.js" charset="utf-8"></script>
+```
