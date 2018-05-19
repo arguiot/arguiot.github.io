@@ -1,0 +1,27 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: layout
+  hidden: true
+  default: post
+  config:
+    required: true
+- type: text
+  name: title
+  label: Title
+  description: The post title
+  config:
+    required: true
+  default: New Post
+- type: datetime
+  name: date
+  label: date
+  description: The time your post was published
+  config:
+    required: true
+- type: file
+  name: image
+  label: image
+  description: The main image
