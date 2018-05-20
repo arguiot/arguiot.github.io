@@ -2,7 +2,7 @@
 title: MVC will really help you debug your code faster
 layout: post
 date: 2018-05-20 00:00:00 +0000
-image: ''
+image: "/uploads/2018/05/20/Capture d’écran 2018-05-20 à 15.41.38.png"
 ---
 Even the best developers in world are doing mistakes. And the debug can cause them headaches for weeks. 
 
