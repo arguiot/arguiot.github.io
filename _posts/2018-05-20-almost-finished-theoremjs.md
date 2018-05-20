@@ -12,7 +12,7 @@ TheoremJS is almost finished, and the v1.0 should come in the next weeks or mont
 
 _TheoremJS' website_
 
-TheoremJS is library for math and computation in JavaScript. Basically, you could compare it to NumPy or SymPy. It has dozens of functions that will help you explore the beautiful universe that is mathematics.
+TheoremJS is library for math and computation in JavaScript. Basically, you could compare it to [NumPy](http://www.numpy.org) or SymPy. It has dozens of functions that will help you explore the beautiful universe that is mathematics.
 
 **You can go checkout the** [**website**](https://theorem.js.org) **for more informations**
 
