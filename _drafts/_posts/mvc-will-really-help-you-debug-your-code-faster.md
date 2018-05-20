@@ -4,8 +4,6 @@ layout: post
 date: 2018-05-20 00:00:00 +0000
 image: ''
 ---
----
-
 Even the best developers in world are doing mistakes. And the debug can cause them headaches for weeks. 
 
 Code is hard to debug because it's not a spoken language, I mean by that that code is very strict and while in a spoken language, structure is not the most important, in code the structure is probably the most important thing because your compiler / linter will help you fix spelling issues. 
