@@ -19,3 +19,5 @@ TheoremJS is library for math and computation in JavaScript. Basically, you coul
 I started to work on Theorem since November in 2017, it's about <span class="ago">23 Nov 2017</span>, and I learned a lot of things about math and computer science.
 
 TheoremJS should be released in about  2 or 3 weeks, so I can fix errors, and add new cool functions 😎.
+
+I hope you guys will like TheoremJS 😊
