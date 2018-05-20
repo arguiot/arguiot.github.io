@@ -31,7 +31,10 @@
 		<hr>
 		{{content}}
 	</div>
-
+	<footer>
+		<h2>Written with <i data-icon="heart">❤️</i> by Arthur Guiot</h2>
+		<p>Copyright <i data-icon="copyright">©</i> Arthur Guiot <span class="year"></span></p>
+	</footer>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99939279-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -46,6 +49,7 @@
 	<script src="https://unpkg.com/lunar-icons/dist/lunar-icons.min.js" charset="utf-8"></script>
 	<script>
 		lunarIcons.replace()
+		document.querySelector("span.year").innerHTML = new Date().getFullYear()
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
