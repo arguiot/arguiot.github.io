@@ -20,4 +20,4 @@ I started to work on Theorem since November in 2017, it's about <span class="ago
 
 TheoremJS should be released in about  2 or 3 weeks, so I can fix errors, and add new cool functions 😎.
 
-I hope you guys will like TheoremJS 😊
+I hope you guys will like [TheoremJS](https://theorem.js.org) 😊
