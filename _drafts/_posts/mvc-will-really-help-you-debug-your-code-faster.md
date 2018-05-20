@@ -6,19 +6,34 @@ image: ''
 ---
 ---
 
-MVC will really help you debug your code faster
-Even the best developers in world are doing mistakes. And the debug can cause them headaches for weeks.
-Code is hard to debug because it's not a spoken language, I mean by that that code is very strict and while in a spoken language, structure is not the most important, in code the structure is probably the most important thing because your compiler / linter will help you fix spelling issues.
-Here is an example of what I meant:
-In English, a beginner may write something like:
-I wante too hit
-I may exaggerate, but you'll be able to understand.
+Even the best developers in world are doing mistakes. And the debug can cause them headaches for weeks. 
+
+Code is hard to debug because it's not a spoken language, I mean by that that code is very strict and while in a spoken language, structure is not the most important, in code the structure is probably the most important thing because your compiler / linter will help you fix spelling issues. 
+
+Here is an example of what I meant: 
+
+In English, a beginner may write something like: 
+
+> I wante too hit
+
+_I may exaggerate, but you'll be able to understand what he's saying._ 
+
 But In code if you write something like:
-want I to eat
-The interpreter will just go like that:
-WTF?And it will be impossible for a beginner to fix this issue, because each words are spelled correctly.
-As a JavaScript developer (I know other language, but I'll focus of JS here because it's the most famous one), debugging can be hard, especially when I didn't write the code, because most people don't care about the structure and write code like:
-This code is for form validation
+
+> want I to eat 
+
+The interpreter will just go like that: 
+
+![](/uploads/2018/05/20/1\*Leg1isRCbyRIv6uBt7X7Aw.gif)
+
+_WTF?_
+
+And it will be impossible for a beginner to fix this issue, because each words are spelled correctly. 
+
+As a JavaScript developer (I know other language, but I'll focus of JS here because it's the most famous one), debugging can be hard, especially when I didn't write the code, because most people don't care about the structure and write code like: 
+
+_This code is for form validation_
+
 ```js
 const divs = new Array();
 divs[0] = "errFirst";
@@ -76,18 +91,24 @@ function finalValidate() {
         document.getElementById("errFinal").innerHTML = "All the data you entered is correct!!!";
 }
 ```
-Without running the code, can you figure out what is the mistake?
+
+_Without running the code, can you figure out what is the mistake?_
 
 But the cool thing with MVC is that code gets a lot more cleaner to read, so the debugging process is a lot faster.
-By separating task, if you see that a part of your website doesn't work, you can immediately identify where is the issue, and start debugging efficiently.
 
+
+By separating task, if you see that a part of your website doesn't work, you can immediately identify where is the issue, and start debugging efficiently.
 
 ---
 
-How to implement MVC in JavaScript?
-There is a range of MVC framework out there, but I'm going to focus on ProType, a relatively new MVC framework (that I created) that resemble to what we get in other languages such as Swift.
-Here is a simple example of an app to display the time, either by using a digital clock or a watch face, using ProType:
-First, let's do the HTML (in the `<body>` tag)
+# How to implement MVC in JavaScript?
+
+There is a range of MVC framework out there, but I'm going to focus on ProType, a relatively new MVC framework (that I created) that resemble to what we get in other languages such as Swift. 
+
+Here is a simple example of an app to display the time, either by using a digital clock or a watch face, using ProType: 
+
+_First, let's do the HTML (in the_ `_<body>_` _tag)_
+
 ```html
 <select class="select">
   <option value="clock">Clock</option>
@@ -111,7 +132,9 @@ First, let's do the HTML (in the `<body>` tag)
   </div>
 </div>
 ```
-Then we'll do the CSS:
+
+_Then we'll do the CSS:_
+
 ```css
 h1 {
   font-size: 64px;
@@ -216,13 +239,17 @@ h1 {
   }
 }
 ```
-And now, the JavaScript:
+
+_And now, the JavaScript:_
 
 We'll start by creating a ProType instance:
+
 ```js
 const P = new ProType()
 ```
+
 And we'll create the clock Group:
+
 ```js
 class Clock extends P.Group {
 
@@ -254,7 +281,9 @@ class Clock extends P.Group {
   }
 }
 ```
+
 Now, we can create the clock View, and mount the Group:
+
 ```js
 class ClockView extends P.ViewController {
   willShow() {
@@ -265,7 +294,9 @@ class ClockView extends P.ViewController {
   }
 }
 ```
+
 After, we'll create the watch Group:
+
 ```js
 class Watch extends P.Group {
   changeHandler() {
@@ -296,7 +327,9 @@ class Watch extends P.Group {
   }
 }
 ```
+
 And we can create our View:
+
 ```js
 class WatchView extends P.ViewController {
   willShow() {
@@ -307,12 +340,16 @@ class WatchView extends P.ViewController {
   }
 }
 ```
+
 After we created all these class, we can tell ProType to mount them:
+
 ```js
 P.autoMount(ClockView, WatchView)
 P.set("clock")
 ```
+
 To finish, we'll just add to the <select> tag an event listener so we can switch between Views:
+
 ```js
 document.querySelector(".select").addEventListener("change", e => {
   const index = e.target.selectedIndex
