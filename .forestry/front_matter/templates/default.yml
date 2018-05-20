@@ -26,5 +26,5 @@ fields:
   label: image
   description: The main image
 pages:
-- _posts/mvc-will-really-help-you-debug-your-code-faster.md
+- _posts/2018-05-20-mvc-will-really-help-you-debug-your-code-faster.md
 - _posts/2018-05-19-releasing-protype.md
