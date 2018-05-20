@@ -22,7 +22,7 @@ But In code if you write something like:
 
 The interpreter will just go like that: 
 
-![](/uploads/2018/05/20/1\*Leg1isRCbyRIv6uBt7X7Aw.gif)
+![WTF?](/uploads/2018/05/20/1\*Leg1isRCbyRIv6uBt7X7Aw.gif "WTF?")
 
 _WTF?_
 
