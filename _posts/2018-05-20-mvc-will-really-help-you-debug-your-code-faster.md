@@ -105,7 +105,7 @@ There is a range of MVC framework out there, but I'm going to focus on ProType, 
 
 Here is a simple example of an app to display the time, either by using a digital clock or a watch face, using ProType: 
 
-_First, let's do the HTML (in the_ `_<body>_` _tag)_
+_First, let's do the HTML (in the_ `<body>` _tag)_
 
 ```html
 <select class="select">
@@ -346,7 +346,7 @@ P.autoMount(ClockView, WatchView)
 P.set("clock")
 ```
 
-To finish, we'll just add to the <select> tag an event listener so we can switch between Views:
+To finish, we'll just add to the `<select>` tag an event listener so we can switch between Views:
 
 ```js
 document.querySelector(".select").addEventListener("change", e => {
