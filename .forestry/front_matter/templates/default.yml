@@ -26,6 +26,7 @@ fields:
   label: image
   description: The main image
 pages:
+- _posts/publishing-my-first-app-on-the-app-store.md
 - _posts/catch-errors-after-deployment.md
 - _posts/2018-05-26-designing-the-video-of-theoremjs.md
 - _posts/2018-05-20-almost-finished-theoremjs.md
