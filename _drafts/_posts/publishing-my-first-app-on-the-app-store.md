@@ -13,3 +13,9 @@ I started developing the app for the CrypTools organization since April 13. It's
 # Step 2. Getting the Apple developer program
 
 I had some trouble buying it because I bought it on an Australian account, but the credit card was registered in Hong Kong because I live there now.
+
+I contacted Apple, but they was pretty busy, and they could only answer after 1 week. (I understand, I ordered it a few days before the WWDC).
+
+But I finally got it, and I'm so happy to have iOS 12 before everyone 😝.
+
+# Step 3. Preparing the app
