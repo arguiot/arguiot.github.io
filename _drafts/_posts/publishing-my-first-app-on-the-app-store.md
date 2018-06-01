@@ -19,3 +19,5 @@ I contacted Apple, but they was pretty busy, and they could only answer after 1 
 But I finally got it, and I'm so happy to have iOS 12 before everyone 😝.
 
 # Step 3. Preparing the app
+
+Once I've done everything, I had to prepare the app, and all the different assets. This wasn't an easy task.
