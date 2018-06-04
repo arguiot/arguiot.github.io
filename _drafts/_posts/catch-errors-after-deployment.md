@@ -10,4 +10,4 @@ This is a new project written in JS to help developers be informed of errors on 
 
 Here is the link: [https://github.com/arguiot/Catch](https://github.com/arguiot/Catch "https://github.com/arguiot/Catch")
 
-The concept is to run a callback when an error happens. This callback can submit the error to the developer's server, so his team can analyze it and fix the issue
+The concept is to run a callback when an error happens. This callback can submit the error to the developer's server, so his team can analyze it and fix the issue.
