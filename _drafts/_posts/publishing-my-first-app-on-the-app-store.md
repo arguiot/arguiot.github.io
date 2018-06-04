@@ -20,4 +20,10 @@ But I finally got it, and I'm so happy to have iOS 12 before everyone 😝.
 
 # Step 3. Preparing the app
 
-Once I've done everything, I had to prepare the app, and all the different assets. This wasn't an easy task.
+Once I've done everything, I had to prepare the app, and all the different assets. This wasn't an easy task, because I had to fix every errors given by the App Store such as the frameworks that were compiled in `x86` instead of `arm64`.
+
+# Step 4. Publish
+
+It was done! I just had to click on button!
+
+You can download the app by searching `CrypTools` on the App Store.
