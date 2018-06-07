@@ -16,4 +16,8 @@ Discord is awesome 😎, there is tons of features and is the best messaging app
 
 It might seems a little bit weird to choose iMessage, because it's the native messaging app of any Apple devices, but iMessage is really an amazing apps. There is very cool stuff such as apps, effects and **Animojis** 🤩.
 
+_Also, because a lot of people have an iPhone, you can. use it with a lot of people_
+
 ![](https://support.apple.com/library/content/dam/edam/applecare/images/fr_FR/macos/highsierra/macos-sierra-ios11-iphone8-imessage-hero.jpg)
+
+# 3. Twitter
