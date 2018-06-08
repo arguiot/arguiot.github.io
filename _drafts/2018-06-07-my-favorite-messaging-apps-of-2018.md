@@ -21,3 +21,7 @@ _Also, because a lot of people have an iPhone, you can. use it with a lot of peo
 ![](https://support.apple.com/library/content/dam/edam/applecare/images/fr_FR/macos/highsierra/macos-sierra-ios11-iphone8-imessage-hero.jpg)
 
 # 3. Twitter
+
+Twitter's direct messages might seem a little bit 'under featured', but it really is a good messaging app. Firstly because it supports fun stuff such as GIFs and Stickers. And secondly because it is simple. You don't need to have something complex that have tons of features, just something simple and easy to use.
+
+_The end._
