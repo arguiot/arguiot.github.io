@@ -11,3 +11,7 @@ _Chirper is a menu bar app for macOS to tweet or buffer for thoughts_
 I created this project in order to tackle one of my problem: tweet something without leaving the app I'm using.
 
 For example, when I watch the FIFA World Cup of my computer, I don't want to leave the live stream.
+
+# Where can I install it?
+
+You can either install from the [website](https://arguiot.github.io/Chirper) or from the Mac App Store
