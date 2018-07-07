@@ -34,15 +34,15 @@ description: Arthur Guiot, I'm a student and a developer
 	</header>
 	<div class="grid">
 		{% for i in site.data.projects %}
-			<div url="{{ i.link }}" class="item" style="color: {{ i.color }}; background: {{ i.background }}">
-				<img src="{{ i.logo }}" alt="{{ i.name }}">
-				<h2>
+		<div url="{{ i.link }}" class="item" style="color: {{ i.color }}; background: {{ i.background }}">
+			<img src="{{ i.logo }}" alt="{{ i.name }}">
+			<h2>
 					{{ i.name }}
 				</h2>
-				<p>
-					{{ i.name }} is {{ i.desc }}
-				</p>
-			</div>
+			<p>
+				{{ i.name }} is {{ i.desc }}
+			</p>
+		</div>
 		{% endfor %}
 	</div>
 	<article>
@@ -51,7 +51,7 @@ description: Arthur Guiot, I'm a student and a developer
 				Who am I?
 			</h1>
 			<p>
-				My name is Arthur Guiot, I'm <span class="age"></span> , so I'm a student. I love math, computers and programming. I'm french 🇫🇷 🐓, but I code in english because I want to do things that are accessible to everyone. I currently live in <span class="location">Hong Kong</span> with my family.
+				My name is Arthur Guiot, I'm <span class="age"></span> , so I'm a student. I love math, computers and programming. I'm french 🇫🇷 🐓, but I code in english because I want to do things that are accessible to everyone. I currently live in <span class="location">Hong Kong</span>				with my family.
 			</p>
 		</section>
 		<section class="what">
@@ -59,7 +59,8 @@ description: Arthur Guiot, I'm a student and a developer
 				What do I do / code?
 			</h1>
 			<p>
-				I mostly code websites, framework and apps in Swift. Above you saw my most latest projects, but I do have a lot more projects, so go checkout my <a href="https://github.com/arguiot">GitHub</a>. But I'm always trying to learn new things, to push my limits.
+				I mostly code websites, framework and apps in Swift. Above you saw my most latest projects, but I do have a lot more projects, so go checkout my <a href="https://github.com/arguiot">GitHub</a>. But I'm always trying to learn new things, to push my
+				limits.
 			</p>
 		</section>
 		<section class="blog">
@@ -69,14 +70,14 @@ description: Arthur Guiot, I'm a student and a developer
 			<h2>My personnal blog</h2>
 			<div class="grid">
 				{% for i in site.posts limit: 20 %}
-					<div url="{{ i.url }}" class="item" style="background: linear-gradient(0, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ i.image | absolute_url }}); background-size: cover;">
-						<h2>
+				<div url="{{ i.url }}" class="item" style="background: linear-gradient(0, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ i.image | absolute_url }}); background-size: cover;background-position-x: center;">
+					<h2>
 							{{ i.title }}
 						</h2>
-						<p class="ago">
-							{{ i.date | date: "%-d %B %Y" }}
-						</p>
-					</div>
+					<p class="ago">
+						{{ i.date | date: "%-d %B %Y" }}
+					</p>
+				</div>
 				{% endfor %}
 			</div>
 		</section>
