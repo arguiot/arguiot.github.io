@@ -1,4 +1,5 @@
 ---
+label: Default
 hide_body: false
 is_partial: false
 fields:
@@ -26,6 +27,7 @@ fields:
   label: image
   description: The main image
 pages:
+- _posts/theoremjs-is-here.md
 - _posts/chirper-my-new-project.md
 - _posts/2018-05-20-mvc-will-really-help-you-debug-your-code-faster.md
 - _posts/2018-06-07-my-favorite-messaging-apps-of-2018.md
