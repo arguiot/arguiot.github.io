@@ -28,11 +28,11 @@ fields:
   description: The main image
 pages:
 - _posts/theoremjs-is-here.md
-- _posts/2018-05-20-mvc-will-really-help-you-debug-your-code-faster.md
-- _posts/2018-06-04-publishing-my-first-app-on-the-app-store.md
-- _posts/2018-06-07-my-favorite-messaging-apps-of-2018.md
-- _posts/2018-05-19-releasing-protype.md
-- _posts/2018-05-20-almost-finished-theoremjs.md
-- _posts/2018-07-07-chirper-my-new-project.md
-- _posts/2018-05-26-designing-the-video-of-theoremjs.md
 - _posts/2018-06-04-catch-errors-after-deployment.md
+- _posts/2018-05-26-designing-the-video-of-theoremjs.md
+- _posts/2018-07-07-chirper-my-new-project.md
+- _posts/2018-05-20-almost-finished-theoremjs.md
+- _posts/2018-05-19-releasing-protype.md
+- _posts/2018-06-07-my-favorite-messaging-apps-of-2018.md
+- _posts/2018-06-04-publishing-my-first-app-on-the-app-store.md
+- _posts/2018-05-20-mvc-will-really-help-you-debug-your-code-faster.md
