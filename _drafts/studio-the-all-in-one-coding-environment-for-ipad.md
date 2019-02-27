@@ -10,3 +10,5 @@ _I've been working on a pretty cool app called StudIO that aims to provide iPad 
 ![](/uploads/2019/02/12/StudIO.jpg)
 
 StudIO is an iOS app that simulates the same complete development environment that you have on macOS or Ubuntu (or other *nix OS) machine. It primarily focuses on iPad, but it does work perfectly fine on any iPhone.
+
+The editor is based on CodeMirror, which enables developers to write and install plugins  in order to improve their experience.
