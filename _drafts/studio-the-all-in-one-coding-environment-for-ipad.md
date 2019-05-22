@@ -15,4 +15,4 @@ The editor is based on a rewritten version of CodeMirror 6, which enables develo
 
 StudIO is currently **the** best (and probably the only) option in the market. That's why we made it cheap (4.99$ in most countries) so it's competitive with future apps.
 
-It's also the first **hackable** code editor for mobile devices ever created. It means that you and the community can create and install plugins, specially for StudIO.
+It's also the first **hackable** code editor for mobile devices ever created. It means that you and the community can create and install plugins, specially for StudIO. Everything within the editor frame is customizable, from the theme to the smart completion bar. Plugins should be written in languages you already know and use: JavaScript and CSS (themes only). The app will run them concurrently using the fastest engine on the market: _JavaScript Core_, so performances shouldn't be too much impacted.
