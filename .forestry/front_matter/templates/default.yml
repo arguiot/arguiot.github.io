@@ -26,7 +26,7 @@ fields:
   label: image
   description: The main image
 pages:
-- _posts/studio-the-all-in-one-coding-environment-for-ipad.md
+- _posts/2019-02-27-studio-the-all-in-one-coding-environment-for-ipad.md
 - _posts/theoremjs-is-here.md
 - _posts/2018-06-04-publishing-my-first-app-on-the-app-store.md
 - _posts/2018-06-04-catch-errors-after-deployment.md
