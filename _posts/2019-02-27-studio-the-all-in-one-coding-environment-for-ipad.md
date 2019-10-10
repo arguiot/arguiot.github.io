@@ -18,3 +18,5 @@ StudIO is currently **the** best (and probably the only) option in the market. T
 It's also the first **hackable** code editor for mobile devices ever created. It means that you and the community can create and install plugins, specially for StudIO. Everything within the editor frame is customizable, from the theme to the smart completion bar. Plugins should be written in languages you already know and use: JavaScript and CSS (themes only). The app will run them concurrently using the fastest engine on the market: _JavaScript Core_, so performances shouldn't be too much impacted.
 
 StudIO will enable students, developers and everyone else to code right from the tool they love and use everyday. It's one of my firsts app, and probably the one I'm most proud of. I would recommend you checking it on the App Store by searching for: "StudIO Code".
+
+_StudIO is coming as soon as possible, when Apple will have it reviewed_
