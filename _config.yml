@@ -3,4 +3,4 @@ highlighter: rouge
 
 permalink: pretty
 
-include: [".well-known/apple-developer-domain-association.txt"]
+include: [.well-known/apple-developer-domain-association.txt]
