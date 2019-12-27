@@ -25,11 +25,13 @@
   color: white
   background: "#384048"
 - name: StudIO - Code
+  link: https://studiocode.app
   desc: the first hackable code editor for iOS
   logo: http://studiocode.app/img/LandingIcon.svg
   color: white
   background: "#111"
 - name: Timeline
+  link: https://timeline.arguiot.com
   desc: a reminder app designed with simplicity in mind
   logo: https://timeline.arguiot.com/img/Logo.svg
   color: black
