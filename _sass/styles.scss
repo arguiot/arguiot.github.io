@@ -70,8 +70,11 @@ header {
 
 		img {
 			margin: 0 auto;
-			width: 300px;
-			height: 300px;
+			width: 350px;
+			height: 350px;
+            border-radius:50%;
+            overflow: hidden;
+            object-fit: cover;
 		}
 	}
 
