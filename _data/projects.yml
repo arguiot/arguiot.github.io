@@ -1,15 +1,14 @@
 ---
 - name: ProType
-  desc: the next generation JavaScript framework
+  desc: a small MVC oriented framework.
   link: https://protype.js.org
   logo: https://protype.js.org/img/ProType.svg
   color: white
   background: black
-- name: CrypTools - iOS
-  desc: the iOS version of <a href="https://cryptools.github.io/learn">learn</a>,
-    a platform to learn cryptography (that I also created)
-  link: https://cryptools.github.io
-  logo: https://cryptools.github.io/img/logo-black.svg
+- name: CrypTool
+  desc: a cryptographic project
+  link: https://cryptool.org
+  logo: https://corona-tracing.cryptool.org/img/logo.svg
   color: black
   background: white
 - name: TheoremJS
@@ -27,12 +26,12 @@
 - name: StudIO - Code
   link: https://studiocode.app
   desc: the first hackable code editor for iOS
-  logo: http://studiocode.app/img/LandingIcon.svg
+  logo: https://studiocode.app/img/LandingIcon.svg
   color: white
   background: "#111"
-- name: Timeline
-  link: https://timeline.arguiot.com
-  desc: a reminder app designed with simplicity in mind
-  logo: https://timeline.arguiot.com/img/Logo.svg
+- name: Euclid Calculator
+  link: https://euclid.pr1mer.tech
+  desc: the modern calculator for macOS/iOS
+  logo: https://euclid.pr1mer.tech/img/logo_102x102@3x.png
   color: black
   background: white

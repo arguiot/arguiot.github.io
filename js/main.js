@@ -1852,7 +1852,7 @@
 	                offset *= -1;
 	            }
 	            var distance = Math.max(_this.container.scrollLeft + offset, 0);
-	            if (distance < _this.container.scrollWidth - _this.container.clientWidth) {
+	            if (distance - SCROLL_AMOUNT < _this.container.scrollWidth - _this.container.clientWidth) {
 	                if (e.deltaMode === WheelEvent.DOM_DELTA_PIXEL) {
 	                    // force spring to new value & don't animate
 	                    _this.spring.setCurrentValue(distance);

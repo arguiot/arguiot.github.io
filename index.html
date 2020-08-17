@@ -7,7 +7,7 @@ description: Arthur Guiot, I'm a student and a developer
 <section class="main">
 	<nav>
 		<a href="/" class="focused">HOME</a>
-		<a href="/projects">PROJECTS</a>
+		<a href="#projects">PROJECTS</a>
 		<a href="/social">SOCIAL</a>
 		<a href="/blog">BLOG</a>
 	</nav>
@@ -24,21 +24,37 @@ description: Arthur Guiot, I'm a student and a developer
 
 <section class="about">
 	<img src="/img/logo.jpeg" alt="Me">
-
-	<h2>About me</h2>
-	<p>
-		This is where you get to know me, as a person. Have a chance to see what I do in my life!
-	</p>
-	<a href="/about">Learn more</a>
+	<div class="text">
+		<h2>About me</h2>
+		<p>
+			This is where you get to know me, as a person. Have a chance to see what I do in my life!
+		</p>
+		<a href="/about">Learn more</a>
+	</div>
 </section>
 
 <section class="code">
-	<h2>Code</h2>
-	<p>
-		As I already stated, I'm a developer. I code various things, ranging from cool websites like this one to native apps as well as open-source projects used by dozens of other developers.
-	</p>
-	<a href="/projects">Read more</a>
+	<div class="text">
+		<h2>Code</h2>
+		<p>
+			As I already stated, I'm a developer. I code various things, ranging from cool websites like this one to native apps as well as open-source projects used by dozens of other developers.
+		</p>
+	</div>
+
 	<img src="/img/code.jpeg" alt="Me">
 </section>
 
+<section class="projects" id="projects">
+	{% for i in site.data.projects %}
+	<a href="{{ i.link }}" class="item" style="color: {{ i.color }}; background: {{ i.background }}">
+		<img src="{{ i.logo }}" alt="{{ i.name }}">
+		<h2>
+			{{ i.name }}
+		</h2>
+		<p>
+			{{ i.name }} is {{ i.desc }}
+		</p>
+	</a>
+	{% endfor %}
+</section>
 <div class="empty"></div>
