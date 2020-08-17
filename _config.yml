@@ -5,3 +5,5 @@ permalink: pretty
 
 include: [.well-known, .well-known/apple-developer-domain-association.txt]
 keep_files: [.well-known, .well-known/apple-developer-domain-association.txt]
+exclude:
+  - node-modules

@@ -1,0 +1,16 @@
+<h1>
+    Blog
+</h1>
+<h2>My personnal blog</h2>
+<div class="grid">
+    {% for i in site.posts limit: 20 %}
+    <div url="{{ i.url }}" class="item" style="background: linear-gradient(0, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ i.image | absolute_url }}); background-size: cover;background-position-x: center;">
+        <h2>
+            {{ i.title }}
+        </h2>
+        <p class="ago">
+            {{ i.date | date: "%-d %B %Y" }}
+        </p>
+    </div>
+    {% endfor %}
+</div>
