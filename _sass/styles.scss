@@ -259,7 +259,8 @@ section {
 	
 			.item {
 				height: 50vh;
-				width: 100;
+				width: 100vw;
+				min-width: unset;
 			}
 		}
 	}
