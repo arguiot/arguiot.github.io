@@ -248,5 +248,19 @@ section {
 				text-align: justify
 			}
 		}
+		&.projects {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			box-sizing: border-box;
+			flex-wrap: wrap;
+			width: 100vw;
+	
+			.item {
+				height: 50vh;
+				width: 100;
+			}
+		}
 	}
 }
