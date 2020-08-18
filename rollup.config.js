@@ -12,6 +12,7 @@ export default [{
         output: {
             file: 'js/main.js',
             format: 'iife',
+            name: 'arguiot',
             sourcemap: true
         },
         intro: '/* Copyright © 2019 Arthur Guiot */',

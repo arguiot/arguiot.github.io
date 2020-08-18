@@ -1,4 +1,4 @@
-(function () {
+var arguiot = (function () {
 	'use strict';
 
 	var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
@@ -2021,6 +2021,29 @@
 		}
 
 		setupUI() {
+			if (matchMedia) {
+				const mq = window.matchMedia("(max-width: 600px)");
+				mq.addListener(this.widthChange.bind(this));
+				this.widthChange(mq);
+			} else {
+				this.largeWindow();
+			}
+		}
+
+		widthChange(mq) {
+			if (mq.matches) {
+				this.smallWindow();
+			} else {
+				this.largeWindow();
+			}
+		}
+		smallWindow() {
+			if (typeof this.horizontal != "undefined") {
+				this.horizontal.destroy();
+			}
+		}
+
+		largeWindow() {
 			this.horizontal = new HorizontalScroll({
 				showScrollbars: true,
 			});
@@ -2028,6 +2051,8 @@
 	}
 
 	const m = new Main();
+
+	return m;
 
 }());
 //# sourceMappingURL=main.js.map

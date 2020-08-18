@@ -6,6 +6,9 @@
   "author": "Arthur Guiot <arguiot@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "rollup -c && gem install jekyll && jekyll build"
+  }
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.1.0",
     "@rollup/plugin-node-resolve": "^7.1.3",
