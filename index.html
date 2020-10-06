@@ -2,93 +2,58 @@
 layout: html
 title: Arthur Guiot
 description: Arthur Guiot, I'm a student and a developer
-
 ---
-<div class="main" protype="main">
-	<header>
-		<div class="nav">
-			<a href="https://github.com/arguiot"><i data-icon="github"></i></a>
-			<a href="https://twitter.com/arthur_guiot"><i data-icon="twitter"></i></a>
-			<a href="https://www.facebook.com/arguiot"><i data-icon="facebook"></i></a>
-			<a href="mailto:arguiot@gmail.com"><i data-icon="mail"></i></a>
-		</div>
-		<div class="stars"></div>
-		<div class="stars-lg"></div>
-		<figure class="shooting-star">
-			<img src="img/shooting-star.svg" alt="shooting star">
-		</figure>
-		<figure class="shooting-star-right">
-			<img src="img/shooting-star.svg" alt="shooting star">
-		</figure>
-		<div class="left">
-			<img src="img/logo.jpeg" alt="">
-		</div>
-		<div class="right">
-			<h1>
-				Arthur Guiot
-			</h1>
-			<h2>
-				I'm a student who is passionate about math, computers and programming.
-			</h2>
-		</div>
-	</header>
-	<div class="grid">
-		{% for i in site.data.projects %}
-		<div url="{{ i.link }}" class="item" style="color: {{ i.color }}; background: {{ i.background }}">
-			<img src="{{ i.logo }}" alt="{{ i.name }}">
-			<h2>
-					{{ i.name }}
-				</h2>
-			<p>
-				{{ i.name }} is {{ i.desc }}
-			</p>
-		</div>
-		{% endfor %}
+
+<section class="main">
+	<nav>
+		<a href="/" class="focused">HOME</a>
+		<a href="https://projects.arguiot.com">PROJECTS</a>
+		<a href="https://twitter.com/arthur_guiot">SOCIAL</a>
+		<!-- <a href="/blog">BLOG</a> -->
+	</nav>
+	<div class="text">
+		<h1>
+			Arthur <b>Guiot</b>
+		</h1>
+		<p class="desc">
+			Student by day, developer by night and F1 fan on Sunday. Curious by nature, I love to discover new things, new places and new people. I create cool stuff that I share here.
+			<!-- <span class="pushing">#KeepPushing</span> -->
+		</p>
 	</div>
-	<article>
-      	<section class="projects">
-        	<p style="text-align: center;">
-              Checkout my <a href="https://projects.arguiot.com">project page</a>!
-          	</p>
-      	</section>
-		<section class="who">
-			<h1>
-				Who am I?
-			</h1>
-			<p>
-				My name is Arthur Guiot, I'm <span class="age"></span> , so I'm a student. I love math, computers and programming. I'm french 🇫🇷 🐓, but I code in english because I want to do things that are accessible to everyone. I currently live in <span class="location">Hong Kong</span>				with my family.
-			</p>
-		</section>
-		<section class="what">
-			<h1>
-				What do I do / code?
-			</h1>
-			<p>
-				I mostly code websites, framework and apps in JavaScript, Python and Swift. Above you saw my most starred projects, but I do have a lot more projects, so go checkout my <a href="https://github.com/arguiot">GitHub</a>. But I'm always trying to learn new things, to push my
-				limits.
-			</p>
-		</section>
-		<section class="blog">
-			<h1>
-				Blog
-			</h1>
-			<h2>My personnal blog</h2>
-			<div class="grid">
-				{% for i in site.posts limit: 20 %}
-				<div url="{{ i.url }}" class="item" style="background: linear-gradient(0, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ i.image | absolute_url }}); background-size: cover;background-position-x: center;">
-					<h2>
-							{{ i.title }}
-						</h2>
-					<p class="ago">
-						{{ i.date | date: "%-d %B %Y" }}
-					</p>
-				</div>
-				{% endfor %}
-			</div>
-		</section>
-	</article>
-	<footer>
-		<h2>Made with <i data-icon="heart">❤️</i> by Arthur Guiot</h2>
-		<p>Copyright <i data-icon="copyright">©</i> Arthur Guiot <span class="year"></span></p>
-	</footer>
-</div>
+</section>
+
+<section class="about">
+	<img src="/img/logo.jpeg" alt="Me">
+	<div class="text">
+		<h2>About me</h2>
+		<p>
+			This is where you get to know me, as a person. Have a chance to see what I do in my life!
+		</p>
+		<a href="/about">Learn more</a>
+	</div>
+</section>
+
+<section class="code">
+	<div class="text">
+		<h2>Code</h2>
+		<p>
+			As I already stated, I'm a developer. I code various things, ranging from cool websites like this one to native apps as well as open-source projects used by dozens of other developers.
+		</p>
+	</div>
+
+	<img src="/img/code.jpeg" alt="Me">
+</section>
+
+<section class="projects" id="projects">
+	{% for i in site.data.projects %}
+	<a href="{{ i.link }}" class="item" style="color: {{ i.color }}; background: {{ i.background }}">
+		<img src="{{ i.logo }}" alt="{{ i.name }}">
+		<h2>
+			{{ i.name }}
+		</h2>
+		<p>
+			{{ i.name }} is {{ i.desc }}
+		</p>
+	</a>
+	{% endfor %}
+</section>

@@ -1,0 +1,22 @@
+{
+  "name": "arguiot.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/arguiot/arguiot.github.io",
+  "author": "Arthur Guiot <arguiot@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c && gem install jekyll && jekyll build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "rollup": "^2.7.6",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-terser": "^5.3.0"
+  },
+  "dependencies": {
+    "@oberon-amsterdam/horizontal": "^1.0.4"
+  }
+}
